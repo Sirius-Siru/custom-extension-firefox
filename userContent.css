@@ -1,0 +1,73 @@
+@-moz-document url-prefix(http), url-prefix(https) {
+  html, body, main, [role="main"], #root, #app, #__next, [id^="__remix"] {
+    background-color: #14161a !important;
+    color: #d6d7db !important;
+  }
+
+  div:not([class*="badge"]):not([class*="alert"]):not([class*="toast"]):not([class*="error"]):not([class*="success"]):not([class*="warning"]) {
+    color: inherit !important;
+  }
+
+  div[style*="background-color: rgb(255"],
+  div[style*="background-color: rgba(255"],
+  div[style*="background: rgb(255"],
+  div[style*="background: rgba(255"] {
+    background-color: transparent !important;
+  }
+
+  article, section, aside, nav {
+    background-color: #1a1d22 !important;
+  }
+
+  input, textarea, select {
+    background-color: #1a1d22 !important;
+    color: #d6d7db !important;
+    border: 1px solid #22262e !important;
+    outline: none !important;
+  }
+
+  button {
+    background-color: #20242c !important;
+    color: #d6d7db !important;
+    border: 1px solid #22262e !important;
+    border-radius: 2px !important;
+    outline: none !important;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #2a2f3a !important;
+  }
+
+  input:focus, textarea:focus, select:focus, button:focus {
+    border-color: #7aa2f7 !important;
+    box-shadow: 0 0 0 2px rgba(122,162,247,0.15) !important;
+  }
+
+  img, video, canvas {
+    filter: brightness(0.9) contrast(0.95) !important;
+  }
+
+  a {
+    color: #7aa2f7 !important;
+    text-decoration: none !important;
+  }
+
+  a:hover {
+    text-decoration: underline !important;
+  }
+
+  ::placeholder {
+    color: #565f89 !important;
+    opacity: 1 !important;
+  }
+
+  ::selection {
+    background-color: #2e3a4a !important;
+    color: #aeafb0 !important;
+  }
+
+  table, th, td {
+    border-color: #22262e !important;
+  }
+}
